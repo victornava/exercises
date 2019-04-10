@@ -62,7 +62,7 @@ end
 def flatten_hash3(hash)
   hash.reduce([]) do |m, (k,v)|
     if v.kind_of?(Hash)
-      flatten_hash2(v).reduce(m) do |mm, vv|
+      flatten_hash3(v).reduce(m) do |mm, vv|
         mm + [[k] + vv]
       end
     else
