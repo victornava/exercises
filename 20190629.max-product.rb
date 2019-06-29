@@ -12,7 +12,7 @@
 # discuss the exercise in the comments below.
 
 def max_prod(arrays)
-  head, *tail = arrays.map {|a| [a.min, a.max] }
+  head, *tail = arrays.map(&:minmax)
   head.product(*tail)
     .map { |xs| [xs.reduce(:*), xs] }
     .max_by(&:first)
