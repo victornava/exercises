@@ -1,0 +1,16 @@
+{
+  "artist": "Tool",
+  "album": "Lateralus",
+  "year": 2001,
+  "is_explicit": true,
+  "tags": [
+    "rock",
+    "progresive"
+  ],
+  "musicians": {
+    "Adam": "Guitar",
+    "Daney": "Drums",
+    "Justin": "Base",
+    "Maynard": "Vocals"
+  }
+}
